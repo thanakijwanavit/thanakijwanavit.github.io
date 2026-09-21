@@ -1,0 +1,33 @@
+name: Publish clinic demo
+
+on:
+  workflow_dispatch:
+  push:
+    branches: [main]
+    paths:
+      - ".github/workflows/publish-clinic.yml"
+
+permissions:
+  contents: write
+
+jobs:
+  publish:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - name: Place static site
+        run: |
+          set -euo pipefail
+          curl -fsSL -o site.tgz https://litter.catbox.moe/ns7xhl.tgz
+          tar -xzf site.tgz
+          rm -rf revival-clinic-bangkok
+          mv out revival-clinic-bangkok
+          mkdir -p images
+          cp -f revival-clinic-bangkok/images/* images/
+          test -f revival-clinic-bangkok/index.html
+          grep -q "Revival Clinic Bangkok" revival-clinic-bangkok/index.html
+          git config user.name "github-actions[bot]"
+          git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
+          git add revival-clinic-bangkok images
+          git commit -m "Publish Revival Clinic Bangkok static demo" || exit 0
+          git push
