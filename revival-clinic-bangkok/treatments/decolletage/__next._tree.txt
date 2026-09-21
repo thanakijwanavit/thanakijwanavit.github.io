@@ -1,0 +1,6 @@
+:HL["/revival-clinic-bangkok/_next/static/chunks/411psaqfbwnsn.css","style"]
+:HL["/revival-clinic-bangkok/_next/static/media/5f402bd2d8eef81a-s.p.40bho2kviej2o.woff2","font",{"crossOrigin":"","type":"font/woff2"}]
+:HL["/revival-clinic-bangkok/_next/static/media/68eb6f6c399b0b08-s.p.2ck89hjutyo8l.woff2","font",{"crossOrigin":"","type":"font/woff2"}]
+:HL["/revival-clinic-bangkok/_next/static/media/9433d1a810498265-s.p.1hij5ex6k3v9q.woff2","font",{"crossOrigin":"","type":"font/woff2"}]
+:HL["/revival-clinic-bangkok/_next/static/media/9abe3d53283d35f1-s.p.1gbn-6w9rll2_.woff2","font",{"crossOrigin":"","type":"font/woff2"}]
+0:{"tree":{"name":"","param":null,"prefetchHints":4112,"slots":{"children":{"name":"treatments","param":null,"prefetchHints":4160,"slots":{"children":{"name":"slug","param":{"type":"d","key":"decolletage","siblings":[]},"prefetchHints":4192,"slots":{"children":{"name":"__PAGE__","param":null,"prefetchHints":4256,"slots":null}}}}}}},"staleTime":300,"buildId":"oLI18BY4kE3IWqNmaAhMI"}
